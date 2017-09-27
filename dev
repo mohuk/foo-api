@@ -1,0 +1,4 @@
+MONGODB_URI=mongodb://mongodb/foster-publications
+SENDGRID_KEY=<your sendgrid key>
+MASTER_KEY=<your master key>
+JWT_SECRET=<your jwt secret>

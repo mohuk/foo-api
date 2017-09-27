@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  app:
+    container_name: foster-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ./dev
+    ports:
+      - 8080:8080
+    links:
+      - mongodb
+
+  mongodb:
+    image: mongo:3.5.13
+    container_name: mongodb
+    ports:
+      - 27017:27017
